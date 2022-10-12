@@ -181,11 +181,15 @@ nav {
 .social-icons {
   display: none;
 }
+/* social icons was hidden here */
+
+/* this hides the links div */
 .links-container {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
 }
+/* this shows the links div */
 .show-container {
   height: 10rem;
 }

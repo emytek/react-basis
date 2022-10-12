@@ -12,8 +12,10 @@ const Navbar = () => {
   };
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
+    //getBoundingClientRect method returns the size and position of an element to the view port
     if (showLinks) {
       linksContainerRef.current.style.height = `${linksHeight}px`;
+      // so we checked the height of the links above
     } else {
       linksContainerRef.current.style.height = '0px';
     }
@@ -32,6 +34,7 @@ const Navbar = () => {
             {links.map((link) => {
               const { id, url, text } = link;
               return (
+                // originally, this was hardcoded
                 <li key={id}>
                   <a href={url}>{text}</a>
                 </li>

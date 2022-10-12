@@ -6,6 +6,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // console.log("Hello")
     let amount = parseInt(count);
     if (count <= 0) {
       amount = 1;
